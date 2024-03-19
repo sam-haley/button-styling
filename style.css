@@ -1,0 +1,79 @@
+/* Resetting default button styles */
+a {display: inline-block;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 20px;
+    margin:80px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Primary button styles */
+.first {
+    background-color: #ff00f7;
+    color: #fff;
+}
+
+.first:hover {
+    background-color: #640861;
+}
+
+/* Secondary button styles */
+.second {
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.second:hover {
+    background-color: #e2e6ea;
+}
+
+/* Fancy button styles */
+.shadow {
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.shadow:hover {
+    background-color: #ff6b00;
+}
+
+/* Round button styles */
+.round {
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    line-height: 30px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.round:hover {
+    background-color: #388e3c;
+}
+
+/* Outline button styles */
+.outline {
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+    transition: all 0.3s ease;
+}
+
+.outline:hover {
+    background-color: #007bff;
+    color: #fff;
+}
