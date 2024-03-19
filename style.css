@@ -76,3 +76,72 @@ a {display: inline-block;
     background-color: #007bff;
     color: #fff;
 }
+
+
+  /* Styling different types of links */
+  /* Basic link */
+  .basic-link {
+    color: #007bff; /* blue */
+  }
+
+  .basic-link:hover {
+    color: #1e4874; /* blue */
+  }
+
+
+  /* Hover effect with animation */
+  .hover-effect {
+    position: relative;
+    color: #007bff;
+    transition: color 0.3s;
+  }
+
+  .hover-effect::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .hover-effect:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  /* Custom link with background and border */
+  .custom-link {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #4caf50; /* green */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .custom-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    top: 0;
+    left: -100%;
+    transition: left 0.3s;
+  }
+
+  .custom-link:hover::before {
+    left: 0;
+  }
+
+  /* Custom link hover effect */
+  .custom-link:hover {
+    background-color: #388e3c; /* darker green */
+  }
